@@ -3,7 +3,8 @@ name = "plato-vision-jepa"
 version = "0.1.0"
 edition = "2021"
 description = "Vision JEPA for PLATO nervous system — room perception from camera frames"
-license = "MIT"
+license = "Apache-2.0"
+repository = "https://github.com/SuperInstance/plato-vision-jepa"
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
