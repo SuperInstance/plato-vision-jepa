@@ -10,8 +10,11 @@ Camera room perception crate. Produces 16-dimensional vision state vectors from 
 
 | Repo | Relationship | Description |
 |------|-------------|-------------|
+| [plato-state](https://github.com/SuperInstance/plato-state) | **Depends on** | Room state vectors that vision state feeds into |
 | [plato-nervous](https://github.com/SuperInstance/plato-nervous) | **Depended on by** | Consumes vision state vectors for RoomStateVector fusion and the signal chain |
-| [openconstruct-kernel](https://github.com/SuperInstance/openconstruct-kernel) | **Related** | May provide raw camera hardware detection and frame metadata |
+| [plato-rooms](https://github.com/SuperInstance/plato-rooms) | **Related** | Room definitions where cameras are sensors |
+| [plato-tiles](https://github.com/SuperInstance/plato-tiles) | **Related** | Tile types for vision data transport |
+| [plato-dashboard](https://github.com/SuperInstance/plato-dashboard) | **Related** | Dashboard renders vision perception status |
 | [concrete-token-demo](https://github.com/SuperInstance/concrete-token-demo) | **Related** | Can be exercised through the concrete-token-demo CLI |
 
 ## Data Flow
