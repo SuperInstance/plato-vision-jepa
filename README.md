@@ -64,6 +64,31 @@ if deadband.should_process(&histogram) {
 }
 ```
 
+## Ecosystem
+
+plato-vision-jepa is part of the **PLATO Nervous System** — the vision perception layer.
+
+**Where this sits:** Layer 0 (sensor input). Produces 16-dimensional vision state vectors that flow into [plato-nervous](https://github.com/SuperInstance/plato-nervous) for RoomStateVector fusion.
+
+**Signal chain:**
+```
+Camera → plato-vision-jepa (16-dim) ─┐
+                                      ├→ plato-nervous (RoomStateVector) → distillation
+Microphone → plato-audio-jepa (16-dim)─┘
+```
+
+| Repo | Role |
+|------|------|
+| [plato-nervous](https://github.com/SuperInstance/plato-nervous) | Core signal chain — consumes vision state vectors |
+| [plato-audio-jepa](https://github.com/SuperInstance/plato-audio-jepa) | Sister crate — 16-dim audio state vectors |
+| [openconstruct-kernel](https://github.com/SuperInstance/openconstruct-kernel) | Hardware detection for camera devices |
+| [concrete-token-demo](https://github.com/SuperInstance/concrete-token-demo) | CLI demo that can exercise vision state inputs |
+| [plato-browser](https://github.com/SuperInstance/plato-browser) | Browser demo using WebRTC for camera access |
+| [luciddreamer-ai](https://github.com/SuperInstance/luciddreamer-ai) | Cloud-layer reactive podcast engine |
+| [hermit-crab](https://github.com/SuperInstance/hermit-crab) | Agent migration between rooms |
+
+See [DEPENDENCIES.md](./DEPENDENCIES.md) for detailed dependency and data flow information.
+
 ## License
 
 MIT
