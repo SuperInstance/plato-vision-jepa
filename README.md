@@ -2,6 +2,17 @@
 
 Vision JEPA for the **PLATO nervous system** — processes camera frames into structured 16-dimensional room state vectors.
 
+<p align="center"><img src="assets/images/vision.png" alt="The room as 16 points of light" width="720"></p>
+
+```mermaid
+graph LR
+    CAM[Camera frames] --> H[Frame Histogram]
+    H --> D[VisionDeadband<br/>only significant change passes]
+    D --> J[VL-450M JEPA]
+    J --> S[RoomVisionState<br/>16-dim: brightness · motion · occupancy · anomaly]
+    S --> N[plato-nervous]
+```
+
 ## Signal Chain
 
 ```
