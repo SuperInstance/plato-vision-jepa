@@ -92,7 +92,7 @@ Microphone → plato-audio-jepa (16-dim)─┘
 |------|------|
 | [plato-nervous](https://github.com/SuperInstance/plato-nervous) | Core signal chain — consumes vision state vectors |
 | [plato-audio-jepa](https://github.com/SuperInstance/plato-audio-jepa) | Sister crate — 16-dim audio state vectors |
-| [openconstruct-kernel](https://github.com/SuperInstance/openconstruct-kernel) | Hardware detection for camera devices |
+| [OpenConstruct](https://github.com/SuperInstance/OpenConstruct) | Hardware detection for camera devices |
 | [concrete-token-demo](https://github.com/SuperInstance/concrete-token-demo) | CLI demo that can exercise vision state inputs |
 | [plato-browser](https://github.com/SuperInstance/plato-browser) | Browser demo using WebRTC for camera access |
 | [luciddreamer-ai](https://github.com/SuperInstance/luciddreamer-ai) | Cloud-layer reactive podcast engine |
